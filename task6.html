@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task-6_Assignment 9</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Roboto&display=swap');
+
+            :root {
+                --primary-font: 'Roboto', sans-serif;
+                --secondary-font: 'Hind Siliguri', sans-serif;
+            }
+
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: rgba(89, 90, 88, 0.877);
+                text-align: center;
+            }
+
+            .form {
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px;
+                height: 400px;
+                width: 500px;
+                background-color: rgb(105, 17, 17);
+                border-radius: 6px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .form h1 {
+                font-family: var(--primary-font);
+                padding-bottom: 15px;
+                text-transform: capitalize;
+                color: bisque;
+            }
+
+            .form .element {
+                width: 100%;
+                padding: 5px;
+                margin-bottom: 10px;
+                border-radius: 3px;
+                border: none;
+                font-family: var(--secondary-font);
+                background-color: rgb(167, 235, 142);
+            }
+
+            .group {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 10px;
+            }
+
+            .individual {
+                margin-right: 2rem;
+                font-family: var(--secondary-font);
+                font-size: small;
+                color: bisque;
+            }
+
+            /* input {
+                width: 100%;
+                padding: 5px;
+                margin-bottom: 10px;
+                border-radius: 3px;
+                border: none;
+                font-family: var(--secondary-font);
+            }
+
+            input:focus {
+                border: none;
+            } */
+
+            button {
+                background-color: aquamarine;
+                font-size: 16px;
+                color: black;
+            }
+
+            button:hover {
+                cursor: pointer;
+                background-color: black;
+                color: aquamarine;
+
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div><a href="/index.html">Home</a></div>
+        <div class="form">
+            <h1>Employee Detail</h1>
+            <input class="element" type="text" id="name" name="name" placeholder="Name">
+            <input class="element" type="email" id="email" name="email" placeholder="Email">
+            <input class="element" type="number" id="mobile" name="mobile" placeholder="Mobile">
+            <input class="element" type="number" id="age" name="age" placeholder="Age">
+            <div class="group">
+                <div class="individual">
+                    <input type="radio" id="salaried" value="Salaried">
+                    <label for="salaried">Salaried</label>
+                </div>
+                <div class="individual">
+                    <input type="radio" id="own-business" value="own-business">
+                    <label for="own-business">Own-business</label>
+                </div>
+            </div>
+            <button class="element" type="submit">Submit</button>
+        </div>
+    </body>
+
+</html>

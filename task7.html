@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task-7_Assignment 9</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Roboto&display=swap');
+
+            :root {
+                --primary-font: 'Roboto', sans-serif;
+                --secondary-font: 'Hind Siliguri', sans-serif;
+            }
+
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: rgba(207, 204, 204, 0.877);
+                /* text-align: center; */
+            }
+
+            .form {
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px;
+                height: 400px;
+                width: 500px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 6px;
+                display: flex;
+                flex-direction: column;
+                border: 3px solid;
+            }
+
+            .form h1 {
+                font-family: var(--primary-font);
+                padding-bottom: 15px;
+                text-transform: capitalize;
+                color: rgb(199, 170, 136);
+            }
+
+            .names {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                margin: 0 auto;
+                justify-content: space-between;
+                margin-bottom: 15px;
+            }
+
+            .name {
+                width: 245px;
+            }
+
+            .name-element {
+                width: 100%;
+                /* padding: 5px; */
+                border-radius: 3px;
+                border: none;
+                border-bottom: 2px solid;
+                font-family: var(--secondary-font);
+            }
+
+            .group {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+            }
+
+            .individual {
+                margin-right: 2rem;
+                font-family: var(--secondary-font);
+                font-size: small;
+                color: black
+            }
+
+            .address {
+                margin-bottom: 15px;
+            }
+
+            .address1 {
+                width: 100%;
+                border-radius: 3px;
+                border: none;
+                border-bottom: 2px solid;
+                font-family: var(--secondary-font);
+            }
+
+            .addresses2 {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                margin: 0 auto;
+                justify-content: space-between;
+                margin-bottom: 15px;
+            }
+
+            .address2 {
+                width: 160px;
+            }
+
+            .address-element {
+                width: 100%;
+                border-radius: 3px;
+                border: none;
+                border-bottom: 2px solid;
+                font-family: var(--secondary-font);
+            }
+
+            button {
+                background-color: aquamarine;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid gray;
+                border-radius: 3px;
+                color: black;
+            }
+
+            button:hover {
+                cursor: pointer;
+                background-color: black;
+                color: aquamarine;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div><a href="/index.html">Home</a></div>
+        <div class="form">
+            <h1>Employee Detail</h1>
+            <div class="names">
+                <div class="name">
+                    <input class="name-element" type="text" id="fName" name="firstName">
+                    <label class="label" for="firstName">First Name</label>
+                </div>
+                <div class="name">
+                    <input class="name-element" type="text" id="lName" name="lastName">
+                    <label class="label" for="lastName">Last Name</label>
+                </div>
+            </div>
+
+            <div class="address">
+                <input class="address1" type="text" id="address" name="address">
+                <label for="address">Address</label>
+            </div>
+
+            <div class="addresses2">
+                <div class="address2">
+                    <input class="address-element" type="text" id="city" name="city">
+                    <label for="city">City</label>
+                </div>
+                <div class="address2">
+                    <input class="address-element" type="text" id="state" name="state">
+                    <label for="state">State</label>
+                </div>
+                <div class="address2">
+                    <input class="address-element" type="number" id="pincode" name="pincode">
+                    <label for="pincode">Pincode</label>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="individual">
+                    <input type="radio" id="salaried" value="Salaried">
+                    <label for="salaried">Salaried</label>
+                </div>
+                <div class="individual">
+                    <input type="radio" id="own-business" value="own-business">
+                    <label for="own-business">Own-business</label>
+                </div>
+            </div>
+            <button class="element" type="submit">Submit</button>
+        </div>
+    </body>
+
+</html>

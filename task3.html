@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task-3_Assignment 9</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Roboto&display=swap');
+
+            :root {
+                --primary-font: 'Roboto', sans-serif;
+                --secondary-font: 'Hind Siliguri', sans-serif
+            }
+
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: aquamarine;
+                text-align: center;
+            }
+
+            .form {
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px;
+                height: 400px;
+                width: 500px;
+                background-color: rgb(156, 127, 127);
+                border-radius: 6px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .form h1 {
+                font-family: var(--primary-font);
+                padding-bottom: 15px;
+                text-transform: capitalize;
+            }
+
+            .form .element {
+                width: 100%;
+                padding: 5px;
+                margin-bottom: 10px;
+                border-radius: 3px;
+                border: none;
+                font-family: var(--secondary-font);
+            }
+
+            /* input {
+                width: 100%;
+                padding: 5px;
+                margin-bottom: 10px;
+                border-radius: 3px;
+                border: none;
+                font-family: var(--secondary-font);
+            }
+
+            input:focus {
+                border: none;
+            } */
+
+            button {
+                background-color: aquamarine;
+                font-size: 16px;
+                color: black;
+            }
+
+            button:hover {
+                cursor: pointer;
+                background-color: black;
+                color: aquamarine;
+
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div><a href="/index.html">Home</a></div>
+        <div class="form">
+            <h1>contact us</h1>
+            <input class="element" type="text" id="name" name="name" placeholder="Name">
+            <input class="element" type="email" id="email" name="email" placeholder="Email">
+            <input class="element" type="number" id="mobile" name="mobile" placeholder="Mobile">
+            <textarea class="element" name="message" id="message" cols="30" rows="10"
+                placeholder="Your Message"></textarea>
+            <button class="element" type="submit">Submit</button>
+        </div>
+    </body>
+
+</html>
